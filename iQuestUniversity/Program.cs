@@ -1,5 +1,4 @@
-﻿using Animal;
-using System;
+﻿using System;
 
 namespace iQuestUniversity
 {
@@ -9,14 +8,23 @@ namespace iQuestUniversity
         {
             Console.WriteLine($"iQuest University debugging{Environment.NewLine}");
 
-            Duck duck = new Duck();
-            duck.Sound();
+            Duck duck = new Duck("ratusca", "mac");
+            duck.MakeSound();
 
-            Dog dog = new Dog();
-            dog.Sound();
+            Duck duck2 = new Duck("ducky", "mac");
+            duck2.MakeSound();
 
-            Cat cat = new Cat();
-            cat.Sound();
+            Dog dog = new Dog("azorel", "ham");
+            dog.MakeSound();
+
+            Dog dog2 = new Dog("rex", "ham");
+            dog2.MakeSound();
+
+            Cat cat = new Cat("miti", "miau");
+            cat.MakeSound();
+
+            Cat cat2 = new Cat("tina", "miau");
+            cat2.MakeSound();
 
             Console.WriteLine($"{Environment.NewLine}Press any key to exit...");
             Console.ReadKey();

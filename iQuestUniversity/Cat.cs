@@ -1,12 +1,7 @@
-﻿using System;
-
-namespace Animal
+﻿namespace iQuestUniversity
 {
-    public class Cat
+    public class Cat : Animal
     {
-        public void Sound()
-        {
-            Console.WriteLine($"{nameof(Cat)} makes miau");
-        }
+        public Cat(string name, string sound) : base(name, sound) { }
     }
 }
