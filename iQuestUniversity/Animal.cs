@@ -4,14 +4,18 @@ namespace iQuestUniversity
 {
     public abstract class Animal
     {
-        private string Name { get; }
+        protected string Name { get; }
+
+        protected string Destination { get; }
+
 
         private string Sound { get;  }
 
-        protected Animal(string name, string sound)
+        protected Animal(string name, string sound, string destination)
         {
             Name = name;
             Sound = sound;
+            Destination = destination;
         }
 
         public void MakeSound()

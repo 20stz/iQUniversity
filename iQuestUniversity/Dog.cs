@@ -1,7 +1,7 @@
 ﻿namespace iQuestUniversity
 {
-    public class Dog : Animal
+    public class Dog : AnimalThatWalks
     {
-        public Dog(string name, string sound) : base(name, sound) { }
+        public Dog(string name, string sound, string destination) : base(name, sound, destination) { }
     }
 }
